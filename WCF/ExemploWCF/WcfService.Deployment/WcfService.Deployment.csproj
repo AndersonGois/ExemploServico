@@ -68,6 +68,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcfService.DataContract\WcfService.DataContract.csproj">
+      <Project>{F3CCF8D3-B170-464C-A2FB-7AC107200F29}</Project>
+      <Name>WcfService.DataContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfService\WcfService.csproj">
+      <Project>{0BF053DF-E2D5-4FBD-9AF9-45400BC94E05}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
